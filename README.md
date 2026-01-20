@@ -33,3 +33,5 @@ Configuration File prtgexporter.json
 	}
 }
 ```
+
+ALL CREDITS TO https://github.com/luke-777/prtg_exporter
