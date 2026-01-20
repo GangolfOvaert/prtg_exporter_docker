@@ -10,13 +10,15 @@ prtg-exporter-core uses [PrtgAPI](https://github.com/lordmilko/PrtgAPI) to recei
 ![Prometheus](https://raw.githubusercontent.com/luke-777/prtg_exporter/main/images/prometheus.PNG)
 
 
-## Build
-You can build the project with dotnet. Clone the repo and execute:
-```powershell
-dotnet build
-```
+## How to use
 
-Create a configuration file (prtgexporter.json) or use environment variables containing your server credentials:
+1. Adjust your config in prtgexporter.json
+2. Run 'docker build . -t prtg_exporter'
+3. Run 'docker run -d --name prtg_exporter --network monitoring prtg_exporter'
+
+I HIGHLY recommend, not to expose the container to the public. Use Dockers Networking, to connect it to prometheus. 
+
+Configuration File prtgexporter.json
 ```json
 {
 	"PRTG": {
