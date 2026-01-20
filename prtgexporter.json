@@ -1,0 +1,12 @@
+{
+	"PRTG": {
+		"Server": "http://localhost",
+		"Username": "yourapiuser",
+		"Password": "yourpassword"
+	},
+
+	"Exporter": {
+		"Port": "1234",
+		"RefreshInterval": 120
+	}
+}

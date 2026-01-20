@@ -33,7 +33,7 @@ internal class PrtgExporter
             _prtgOptions.Password);
 
         // start the MetricServer:
-        _metricServer = new MetricServer("localhost", _exporterOptions.Port);
+        _metricServer = new MetricServer("*", _exporterOptions.Port);
         _metricServer.Start();
     }
 
